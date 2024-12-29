@@ -1,2 +1,3 @@
 rootProject.name = 'demo-modules'
 include 'demo-domain'
+include 'demo-application'
