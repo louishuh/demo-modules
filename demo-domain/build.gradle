@@ -28,6 +28,8 @@ dependencies {
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.36'
 
     testRuntimeOnly 'org.junit.platform:junit-platform-launcher:1.11.4'
+
+    implementation 'com.google.code.findbugs:jsr305:3.0.2'
 }
 
 tasks.named('test') {
