@@ -43,6 +43,15 @@ dependencies {
     api project(':demo-shared')
 }
 
+compileJava {
+    options.compilerArgs += [
+            '-Amapstruct.suppressGeneratorTimestamp=false',
+            '-Amapstruct.suppressGeneratorVersionInfoComment=false',
+            '-Amapstruct.verbose=false',
+            '-Amapstruct.defaultComponentModel=spring'
+    ]
+}
+
 tasks.named('test') {
     useJUnitPlatform()
 }
