@@ -36,9 +36,9 @@ graph TD
 
 ## demo-adapter
 - 세부적인 기술을 사용해 demo-application에서 정의한 인터페이스를 구현합니다.
-- 기술을 변경해야 해도 새로운 adapter 모듈을 만들어 이 모듈을 교체하지 않기로 합니다.
-  - 기술에 대한 구현체를 sub adapter 모듈로 개발하고, demo-adapter에서 sub adapter를 선택하도록 합니다.
-  - 혹은 demo-adapter에서 구현체를 추가하고 최종적으로 사용할 구현체를 bean으로 등록합니다.
+- 기술을 변경해야 해도 이 모듈을 대체할 새로운 adapter 모듈을 만들지는 않습니다. 대신
+  -  이 모듈 내에 새 구현체를 개발하고 최종적으로 사용할 구현체를 bean으로 등록합니다.
+  -  혹은 sub adapter 모듈을 기술 단위로 개발하고, demo-adapter에서 사용할 sub adapter에 의존하도록 변경합니다.
 
 ## demo-domain
 - 핵심 도메인 모델과 비즈니스 로직을 포함하며, 다른 계층에 의존하지 않고 독립적으로 동작합니다.
