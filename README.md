@@ -31,8 +31,7 @@ graph TD
 
 ## demo-application
 - 비즈니스 로직과 도메인 로직을 조율하며, 주로 서비스 계층과 유스케이스를 담당합니다.
-- spring framework에 의존합니다.
-- rdbms, redis, kafka와 같은 세부적인 기술에는 의존하지 않고 인터페이스를 정의해 사용합니다.
+- 실용성을 감안해 spring framework에는 의존하지만 rdbms, redis, kafka와 같은 세부적인 기술에는 의존하지 않고 인터페이스를 정의해 사용합니다.
 
 ## demo-adapter
 - 세부적인 기술을 사용해 demo-application에서 정의한 인터페이스를 구현합니다.
